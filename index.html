@@ -21,42 +21,35 @@
       position: relative;
     }
 
-    /* Floating Hearts Background */
-    body::before,
-    body::after {
-      content: "❤ ❤ ❤ ❤ ❤ ❤ ❤ ❤ ❤ ❤";
+    .hearts {
       position: fixed;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0;
-      font-size: 28px;
-      color: rgba(255, 105, 135, 0.12);
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
-      align-items: center;
+      inset: 0;
       pointer-events: none;
+      opacity: 0.18;
+      font-size: 24px;
       z-index: 0;
-      animation: floatHearts 12s linear infinite;
     }
 
-    body::after {
-      animation-duration: 18s;
-      transform: rotate(8deg);
+    .heart {
+      position: absolute;
+      animation: float 10s linear infinite;
+      color: #ff6b9a;
     }
 
-    @keyframes floatHearts {
-      0% {
+    .heart:nth-child(1) { left: 8%; top: 92%; animation-delay: 0s; }
+    .heart:nth-child(2) { left: 20%; top: 96%; animation-delay: 2s; }
+    .heart:nth-child(3) { left: 34%; top: 94%; animation-delay: 4s; }
+    .heart:nth-child(4) { left: 48%; top: 97%; animation-delay: 1s; }
+    .heart:nth-child(5) { left: 62%; top: 95%; animation-delay: 3s; }
+    .heart:nth-child(6) { left: 76%; top: 93%; animation-delay: 5s; }
+    .heart:nth-child(7) { left: 90%; top: 96%; animation-delay: 2.5s; }
+
+    @keyframes float {
+      from {
         transform: translateY(0px);
       }
-
-      50% {
-        transform: translateY(-12px);
-      }
-
-      100% {
-        transform: translateY(0px);
+      to {
+        transform: translateY(-115vh);
       }
     }
 
@@ -129,6 +122,16 @@
 
 <body>
 
+  <div class="hearts">
+    <div class="heart">❤</div>
+    <div class="heart">❤</div>
+    <div class="heart">❤</div>
+    <div class="heart">❤</div>
+    <div class="heart">❤</div>
+    <div class="heart">❤</div>
+    <div class="heart">❤</div>
+  </div>
+
   <div class="card">
 
     <h1>For my dhana, Sruti</h1>
@@ -190,3 +193,4 @@
 </body>
 
 </html>
+
