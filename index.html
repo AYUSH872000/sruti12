@@ -1,12 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
+<!DOCTYPE html><html lang="en"><head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>For Sruti</title>
-
-  <style>
+  <title>For Sruti</title>  <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
@@ -37,32 +32,26 @@
     }
 
     .heart:nth-child(1) { left: 8%; top: 92%; animation-delay: 0s; }
-    .heart:nth-child(2) { left: 20%; top: 96%; animation-delay: 2s; }
-    .heart:nth-child(3) { left: 34%; top: 94%; animation-delay: 4s; }
-    .heart:nth-child(4) { left: 48%; top: 97%; animation-delay: 1s; }
-    .heart:nth-child(5) { left: 62%; top: 95%; animation-delay: 3s; }
-    .heart:nth-child(6) { left: 76%; top: 93%; animation-delay: 5s; }
-    .heart:nth-child(7) { left: 90%; top: 96%; animation-delay: 2.5s; }
+    .heart:nth-child(2) { left: 24%; top: 96%; animation-delay: 2s; }
+    .heart:nth-child(3) { left: 42%; top: 94%; animation-delay: 4s; }
+    .heart:nth-child(4) { left: 60%; top: 97%; animation-delay: 1s; }
+    .heart:nth-child(5) { left: 78%; top: 95%; animation-delay: 3s; }
 
     @keyframes float {
-      from {
-        transform: translateY(0px);
-      }
-      to {
-        transform: translateY(-115vh);
-      }
+      from { transform: translateY(0px); }
+      to { transform: translateY(-115vh); }
     }
 
     .card {
       position: relative;
       z-index: 1;
       max-width: 820px;
+      width: 100%;
       background: rgba(255, 255, 255, 0.96);
-      border-radius: 22px;
-      padding: 36px;
+      border-radius: 24px;
+      padding: 40px;
       box-shadow: 0 14px 36px rgba(0, 0, 0, 0.08);
-      line-height: 1.85;
-      backdrop-filter: blur(4px);
+      text-align: center;
     }
 
     h1 {
@@ -76,6 +65,24 @@
       color: #777;
       margin-bottom: 24px;
       font-size: 15px;
+    }
+
+    .open-btn {
+      border: none;
+      background: #ff7aa8;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 999px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 8px;
+    }
+
+    .letter {
+      display: none;
+      text-align: left;
+      margin-top: 28px;
+      line-height: 1.85;
     }
 
     .gallery {
@@ -117,80 +124,72 @@
       color: #666;
       font-size: 15px;
     }
-  </style>
-</head>
+  </style></head><body>  <div class="hearts">
+    <div class="heart">❤</div>
+    <div class="heart">❤</div>
+    <div class="heart">❤</div>
+    <div class="heart">❤</div>
+    <div class="heart">❤</div>
+  </div>  <div class="card"><h1>For my dhana, Sruti</h1>
 
-<body>
+<div class="subtitle">
+  A small note from Your Nikamma Boyfriend,
+  Currently became your ex.
+</div>
 
-  <div class="hearts">
-    <div class="heart">❤</div>
-    <div class="heart">❤</div>
-    <div class="heart">❤</div>
-    <div class="heart">❤</div>
-    <div class="heart">❤</div>
-    <div class="heart">❤</div>
-    <div class="heart">❤</div>
+<button class="open-btn" onclick="document.getElementById('letter').style.display='block'; this.style.display='none';">
+  Open my heart
+</button>
+
+<div class="letter" id="letter">
+  <div class="gallery">
+    <img src="./photo1.webp" alt="Memory 1" />
+    <img src="./photo2.webp" alt="Memory 2" />
+    <img src="./photo3.webp" alt="Memory 3" />
   </div>
 
-  <div class="card">
+  <p>
+    I have been thinking a lot about us, and about the moments when you needed me but I was not there the way I should have been.
+    I know saying sorry cannot suddenly make everything feel okay, but I still wanted to say it honestly, from my heart.
+  </p>
 
-    <h1>For my dhana, Sruti</h1>
+  <p>
+    I am really sorry for not being able to talk whenever you needed me, for not giving you enough time, and for making you feel alone when you should have felt cared for.
+    You deserved my attention, my presence, and my time — especially on the days when you needed me most,I had promised it,but i made excuses,I am extremely sorry for breaking your heart.
+  </p>
 
-    <div class="subtitle">
-      A small note from Your Nikamma Boyfriend,
-      Currently became your ex.
-    </div>
-
-    <div class="gallery">
-      <img src="./photo1.webp" alt="Memory 1" />
-      <img src="./photo2.webp" alt="Memory 2" />
-      <img src="./photo3.webp" alt="Memory 3" />
-    </div>
-
-    <p>
-      I have been thinking a lot about us, and about the moments when you needed me but I was not there the way I should have been.
-      I know saying sorry cannot suddenly make everything feel okay, but I still wanted to say it honestly, from my heart.
-    </p>
-
-    <p>
-      I am really sorry for not being able to talk whenever you needed me, for not giving you enough time, and for making you feel alone when you should have felt cared for.
-      You deserved my attention, my presence, and my time — especially on the days when you needed me most,I had promised it,but i made excuses,I am extremely sorry for breaking your heart.
-    </p>
-
-    <div class="memory">
-      I still remember our first meeting. You were slipping from that waterslide, almost like a little waterfall over the rocks, and I was just behind you. When I held you, it happened so quickly, but that small moment stayed with me.And the last meeting,in which i had cried after meeting you,because actually,i value for you. Even now, whenever I think of us from first day to our recent meet, that memory comes back — simple, unexpected, and special in a way I still carry with me.
-    </div>
-
-    <p>
-      Sometimes we do not realize the value of small moments until they become the very thing we miss the most.
-      I miss hearing about your day, the things that made you smile, and even those quiet moments when nothing special was happening but talking to you still made everything feel lighter.
-    </p>
-
-    <p>
-      You are truly special to me, Sruti- My lovey-Dovey.
-      Maybe I do not always express it properly, but you matter to me more than my words often show.
-      I never wanted my lack of time to make you feel less important, because the truth is exactly the opposite.
-    </p>
-
-    <p>
-      I am not writing this to force a reply or to make you forget what hurt you.
-      I only wanted you to know what is in my heart.Forgive me and give me a chance.
-      If I could change one thing, I would have been there more — listened more, understood more, and made more time for you at that night.
-    </p>
-
-    <p>
-      No matter how things are right now, I will always be grateful for you.
-      Whenever you feel ready, I would love to talk.
-      Until then, please remember this — you are precious to me, my dhana.You are always mine.
-    </p>
-
-    <div class="signoff">
-      —Your's Nikamma Chutiya Ayush
-    </div>
-
+  <div class="memory">
+    I still remember our first meeting. You were slipping from that waterslide, almost like a little waterfall over the rocks, and I was just behind you. When I held you, it happened so quickly, but that small moment stayed with me.And the last meeting,in which i had cried after meeting you,because actually,i value for you. Even now, whenever I think of us from first day to our recent meet, that memory comes back — simple, unexpected, and special in a way I still carry with me.
   </div>
 
-</body>
+  <p>
+    Sometimes we do not realize the value of small moments until they become the very thing we miss the most.
+    I miss hearing about your day, the things that made you smile, and even those quiet moments when nothing special was happening but talking to you still made everything feel lighter.
+  </p>
 
-</html>
+  <p>
+    You are truly special to me, Sruti- My lovey-Dovey.
+    Maybe I do not always express it properly, but you matter to me more than my words often show.
+    I never wanted my lack of time to make you feel less important, because the truth is exactly the opposite.
+  </p>
+
+  <p>
+    I am not writing this to force a reply or to make you forget what hurt you.
+    I only wanted you to know what is in my heart.Forgive me and give me a chance.
+    If I could change one thing, I would have been there more — listened more, understood more, and made more time for you at that night.
+  </p>
+
+  <p>
+    No matter how things are right now, I will always be grateful for you.
+    Whenever you feel ready, I would love to talk.
+    Until then, please remember this — you are precious to me, my dhana.You are always mine.
+  </p>
+
+  <div class="signoff">
+    —Your's Nikamma Chutiya Ayush
+  </div>
+</div>
+
+  </div></body></html>
+
 
